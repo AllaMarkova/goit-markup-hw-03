@@ -37,13 +37,12 @@ body {
 }
 .container {
   width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: 0 auto;
+  margin: 0px auto;
+  padding: 0 15px;
 }
 img {
   display: block;
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
 /* -----HEADER----- */
@@ -362,7 +361,6 @@ footer .logo {
   flex-wrap: wrap;
 }
 .portfolio-items {
-  width: 370px;
   flex-basis: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
@@ -378,7 +376,7 @@ footer .logo {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 .portfolio-text {
   font-size: 16px;
