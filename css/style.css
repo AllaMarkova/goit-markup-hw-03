@@ -166,7 +166,7 @@ header .container {
 }
 /* -----ABOUT----- */
 
-.about-title {
+.about-titles {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -179,20 +179,17 @@ header .container {
   overflow: hidden;
 }
 
-.about-items {
-  width: 270px;
-}
-
 .about-list {
   display: flex;
-  flex-wrap: wrap;
 }
-
-.about-list :not(:last-child) {
+.about-items {
+  flex-basis: calc((100% - 90px) / 4);
+}
+.about-items:not(:last-child) {
   margin-right: 30px;
 }
 
-.about-list-title {
+.about-title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -200,6 +197,7 @@ header .container {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
 .about-text {
   font-size: 14px;
   line-height: 1.7;
@@ -208,7 +206,7 @@ header .container {
   color: var(--color-secondary);
 }
 /* -----PROJECTS----- */
-.projects{
+.projects {
   padding-top: 0;
 }
 
@@ -251,9 +249,14 @@ header .container {
   display: flex;
   align-items: center;
 }
-.team-names {
+
+.team-content {
   padding-top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
+}
+
+.team-names {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -261,7 +264,6 @@ header .container {
   letter-spacing: 0.03em;
 }
 .team-position {
-  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -277,13 +279,14 @@ footer {
 }
 footer .logo {
   display: block;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
+  margin-right: 0;
 }
 .logo-title-footer {
   color: var(--color-primary-white);
 }
 .footer-text {
-  padding-bottom: 12x;
+  margin-bottom: 9px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -302,9 +305,10 @@ footer .logo {
 .footer-link:focus {
   color: var(--color-active);
 }
-.footer-item {
-  margin-top: 12px;
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
+
 /* -----FILTERS----- */
 .filters-list {
   display: flex;
@@ -335,6 +339,8 @@ footer .logo {
 .filter-button:active {
   background-color: var(--color-active);
   color: var(--color-primary-white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* -----PORTFOLIO----- */
 
@@ -374,6 +380,7 @@ footer .logo {
   margin-bottom: 4px;
 }
 .portfolio-text {
+  margin-top: 4px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
