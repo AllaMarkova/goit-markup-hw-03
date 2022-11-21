@@ -41,7 +41,7 @@ body {
 }
 img {
   display: block;
-  /* max-width: 100%; */
+  max-width: 100%;
 }
 
 /* -----HEADER----- */
@@ -117,6 +117,11 @@ header .container {
 .header-link:focus {
   color: var(--color-active);
 }
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* -----HERO----- */
 .hero {
   padding-top: 200px;
@@ -173,9 +178,7 @@ header .container {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.about {
-  padding-top: 94px;
-}
+
 .about-items {
   width: 270px;
 }
@@ -205,10 +208,10 @@ header .container {
   color: var(--color-secondary);
 }
 /* -----PROJECTS----- */
-.projects {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.projects{
+  padding-top: 0;
 }
+
 .projects-title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -226,9 +229,6 @@ header .container {
 }
 /* -----TEAM----- */
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
   background-color: var(--bgc-team);
 }
 
@@ -337,10 +337,6 @@ footer .logo {
   color: var(--color-primary-white);
 }
 /* -----PORTFOLIO----- */
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .portfolio-title {
   position: absolute;
